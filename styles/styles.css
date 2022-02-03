@@ -26,10 +26,6 @@
   overflow: hidden;
 }
 
-li {
-  list-style-type: none;
-}
-
 /* index.html */
 
 body {
@@ -63,10 +59,6 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   height: 485px;
-}
-
-.main-caption {
-  height: 371px;
 }
 
 .main-headline {
@@ -175,6 +167,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   border-radius: 10px 0px 0px 10px;
+  font-family: inherit
 }
 
 .newsletter-button {
@@ -183,6 +176,7 @@ body {
   line-height: 26px;
   background: #83b3d3;
   border-radius: 0px 10px 10px 0px;
+  font-family: inherit;
 }
 
 .number {
@@ -231,12 +225,21 @@ body {
   color: white;
 }
 
+.form-checkbox {
+  font-family: inherit
+}
+
+.form-radio {
+  font-family: inherit
+}
+
 .form-submit {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   background: #83b3d3;
+  font-family: inherit;
 }
 
 .form-reset {
@@ -244,6 +247,7 @@ body {
   line-height: 23px;
   color: black;
   background: none;
+  font-family: inherit;
 }
 
 .form-result {
@@ -282,6 +286,7 @@ body {
   border-radius: 4px;
   color: white;
   text-decoration: none;
+  font-family: inherit;
 }
 
 .hotels-button-info {
@@ -313,6 +318,7 @@ body {
   color: white;
   background: #83b3d3;
   border-radius: 4px;
+  font-family: inherit;
 }
 
 .pagination-link {
