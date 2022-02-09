@@ -117,9 +117,7 @@ body {
 }
 
 .page-container {
-  margin: 0 auto;
   width: 1200px;
-  padding: 0;
 }
 
 .main-img-wrapper {
@@ -249,7 +247,6 @@ body {
 
 .main-search {
   width: 1200px;
-  margin-top: 0;
 }
 
 .search-headline {
@@ -312,7 +309,6 @@ body {
 
 .newsletter-form {
   display: flex;
-  margin: 0 auto;
   justify-content: center;
 }
 
@@ -344,7 +340,6 @@ body {
 .footer-container {
   width: 1200px;
   display: flex;
-  margin: 0 auto;
 }
 
 .social-logos {
@@ -395,7 +390,6 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   width: 1200px;
-  margin: 0 auto;
   padding-bottom: 59px;
 }
 
@@ -583,7 +577,7 @@ body {
 }
 
 .hotels-button-container {
-  margin: 0 auto 16px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -615,7 +609,7 @@ body {
 
 .hotels-rating-container {
   display: flex;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
   justify-content: space-between;
   width: 300px;
 }
