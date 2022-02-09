@@ -54,14 +54,11 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
-  height: 70px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -5px;
+  margin: 0 auto;
 }
 
 .logo-img {
+  display: block;
   margin-right: 40px;
 }
 
@@ -97,18 +94,22 @@ body {
 }
 
 .navigation-link-button {
-  display: inline-block;
-  margin-top: 14px;
-  margin-bottom: 19px;
   padding-top: 9px;
   padding-bottom: 8px;
-  width: 160px;
   background: #756257;
   color: white;
   text-transform: uppercase;
   line-height: 20px;
   font-size: 16px;
   border-radius: 10px;
+  width: 160px;
+  height: 37px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.navigation-item-button {
+  padding-top: 14px;
 }
 
 .main-container {
@@ -124,7 +125,7 @@ body {
 .main-img-wrapper {
   background-image: url(../images/main-caption/main-caption-background.jpg);
   background-repeat: no-repeat;
-  height: 485px;
+  padding-bottom: 77px;
 }
 
 .main-caption {
@@ -133,11 +134,10 @@ body {
 
 .main-headline {
   padding-top: 63px;
-  margin-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 31px;
   text-transform: uppercase;
 }
 
@@ -145,9 +145,7 @@ body {
   font-size: 22px;
   line-height: 36px;
   width: 720px;
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 80px;
 }
 
 .advantages-item {
@@ -173,11 +171,10 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: white;
-  margin-top: 98px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   text-transform: uppercase;
-  padding-left: 110px;
-  padding-right: 110px;
+  width: 170px;
+  padding-top: 98px;
 }
 
 .advantages-number {
@@ -192,10 +189,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: white;
-  margin-top: 0;
+  margin: 0 auto;
   width: 250px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .dark-blue-background .advantages-description {
@@ -224,12 +219,8 @@ body {
 .recommendation-description {
   font-size: 18px;
   line-height: 21px;
-  margin-top: 0;
-  margin-bottom: 79px;
-  padding-bottom: 10px;
+  margin: 0 auto;
   width: 250px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .black-text h3 {
@@ -267,8 +258,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   width: 720px;
-  margin: 0 auto;
-  margin-bottom: 29px;
+  margin: 0 auto 29px;
   text-transform: uppercase;
 }
 
@@ -276,10 +266,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   width: 720px;
-  margin-bottom: 56px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+  margin: 0 auto 56px;
 }
 
 .main-link {
@@ -290,24 +277,19 @@ body {
   background: #756257;
   border-radius: 10px;
   width: 575px;
-  margin: 0 auto;
+  margin: 0 auto 93px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 93px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .subscribe {
   color: white;
   background-image: url(../images/subscribe-background.jpg);
-  height: 411px;
   background-repeat: no-repeat;
-  background-position-x: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 92px;
 }
 
 .subscribe-offer {
@@ -316,17 +298,15 @@ body {
   line-height: 36px;
   width: 720px;
   text-transform: uppercase;
-  margin-top: 94px;
-  margin-bottom: 29px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 29px;
+  padding-top: 94px;
 }
 
 .subscribe-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  width: 720px;
+  width: 520px;
   margin: 0 auto 46px;
 }
 
@@ -334,7 +314,6 @@ body {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  margin-bottom: 93px;
 }
 
 .newsletter-field {
@@ -346,7 +325,6 @@ body {
   border: 0;
   width: 600px;
   height: 60px;
-  box-sizing: border-box;
 }
 
 .newsletter-button {
@@ -365,7 +343,6 @@ body {
 
 .footer-container {
   width: 1200px;
-  height: 120px;
   display: flex;
   margin: 0 auto;
 }
@@ -377,7 +354,7 @@ body {
 
 .social-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 61px 53px 0;
   padding: 0;
   display: flex;
 }
@@ -390,14 +367,13 @@ body {
 
 .social-item {
   margin-right: 30px;
-  margin-bottom: 53px;
 }
 
 .social-item:last-child {
-  margin-right: 61px;
+  margin-right: 0px;
 }
 
-.number {
+.phone {
   width: 720px;
   font-size: 40px;
   line-height: 40px;
@@ -405,10 +381,11 @@ body {
   background: white;
   padding-top: 40px;
   margin-right: 53px;
+  text-decoration: none;
 }
 
 .htmlacademy-logo {
-  margin-top: 42px;
+  padding-top: 42px;
 }
 
 /* catalog.html  */
@@ -418,10 +395,8 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 408px;
   margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+  padding-bottom: 59px;
 }
 
 .main-headline-inner {
@@ -429,10 +404,8 @@ body {
   line-height: 78px;
   color: white;
   width: 528px;
-  margin-left: 71px;
   padding-top: 35px;
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin: 0 601px 5px 71px;
 }
 
 .breadcrumbs-list {
@@ -451,7 +424,6 @@ body {
   margin-left: 73px;
   margin-right: 26px;
   padding: 0;
-
 }
 
 .breadcrumbs-catalog {
@@ -459,7 +431,6 @@ body {
   line-height: 21px;
   color: white;
 }
-
 
 .form-inner {
   display: flex;
@@ -473,6 +444,7 @@ body {
 }
 .form-legend {
   margin-bottom: 30px;
+  text-align: start;
 }
 .form-item {
   margin-bottom: 13px;
@@ -483,9 +455,7 @@ body {
 }
 
 .checkbox-wrapper {
-  margin-top: 0;
-  margin-left: 71px;
-  margin-right: 67px;
+  margin: 0 67px 0 71px;
   padding: 0;
   display: flex;
 }
@@ -546,10 +516,8 @@ body {
 .results-container {
   display: flex;
   width: 1057px;
-  padding-top: 54px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 53px;
+  padding-top: 44px;
+  margin: 0 auto 53px;
 }
 
 .results-text {
@@ -561,23 +529,24 @@ body {
   text-transform: uppercase;
 }
 
-
 .select-control-results {
   font-size: 18px;
   line-height: 23px;
   width: 287px;
-  height: 48px;
   margin: 0;
+  padding-top: 12px;
+  padding-bottom: 13px;
 }
 
 .hotels-list {
   list-style-type: none;
   display: flex;
   margin: 0 auto;
-  padding: 0;
   width: 1056px;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+  padding-bottom: 34px;
 }
 .hotels-item {
   padding: 20px;
@@ -611,14 +580,12 @@ body {
   font-size: 18px;
   line-height: 23px;
   margin: 0;
-
 }
 
 .hotels-button-container {
-  margin: 0 auto;
+  margin: 0 auto 16px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
 }
 
 .hotels-button {
@@ -630,8 +597,6 @@ body {
   text-decoration: none;
   font-family: inherit;
 }
-
-
 
 .hotels-button-info {
   background: #756257;
@@ -650,10 +615,9 @@ body {
 
 .hotels-rating-container {
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   justify-content: space-between;
   width: 300px;
-  margin-bottom: 20px;
 }
 
 .hotels-rating {
@@ -675,14 +639,13 @@ body {
   border-radius: 4px;
   font-family: inherit;
   width: 619.83px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   padding: 0;
 }
 .pagination-wrapper {
   display: flex;
   width: 1056px;
-  margin: 0 auto;
+  margin: 0 auto 73px;
 }
 
 .pagination-list {
@@ -693,7 +656,6 @@ body {
 }
 .pagination-item {
   margin-right: 8px;
-  margin-bottom: 73px;
 }
 
 .pagination-item:last-child {
@@ -734,33 +696,22 @@ body {
   margin-left: 51px;
 }
 
-
 .subscribe-inner {
   background: white;
   width: 800px;
   margin: 0 auto;
 }
 .subscribe-offer-inner {
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 46px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 46px;
-}
-
-.subscribe-description-inner {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  width: 720px;
-  margin: 0 auto 46px;
 }
 
 .newsletter-field-inner {
   background: #f2f2f2;
 }
 
-.newsletter-form:last-child {
-  margin-bottom: 141px;
+.newsletter-form-inner {
+  margin-bottom: 140px;
+}
