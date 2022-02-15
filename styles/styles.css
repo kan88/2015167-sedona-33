@@ -51,6 +51,11 @@ body {
   background-color: white;
 }
 
+.header {
+  position: relative;
+  z-index: 1;
+}
+
 .navigation {
   display: flex;
   width: 1060px;
@@ -114,6 +119,9 @@ body {
 
 .main-container {
   flex-grow: 1;
+  position: relative;
+  bottom: 5px;
+  z-index: 0;
 }
 
 .page-container {
