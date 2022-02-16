@@ -11,54 +11,49 @@
       <header class="header">
         <nav class="navigation">
           <a class="logo" href="index.html">
-            <img
-              class="logo-img"
-              src="images/header/logo.svg"
-              alt="Логотип сайта о Седоне."
-              width="139"
-              height="70"
-            />
+            <img class="logo-img" src="images/header/logo.svg" alt="Логотип сайта о Седоне." width="139" height="70"/>
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link page-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link page-current">Гостиницы</a>
+              <a class="navigation-link" href="#">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <svg width="44" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m30.026 40.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8-4.412 0-8.022 3.7-8.022 8.1 0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.31 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" fill="#000"/></svg>
-                <span class="visually-hidden">Поиск</span>
+          <ul class="navigation-list-user">
+            <li class="navigation-item-user">
+              <a class="navigation-link-user navigation-link-search" href="#">
+                <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" fill="#000"/></svg>                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <svg width="44" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.444 41c-.301 0-.602-.1-.802-.4-5.416-6.1-6.72-7.5-7.02-7.9-.702-.9-1.103-2.1-1.103-3.3 0-3 2.406-5.4 5.515-5.4 1.304 0 2.507.5 3.51 1.3 1.003-.8 2.307-1.3 3.51-1.3 3.009 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3Zm-6.017-9.5c.3.4 3.51 4 6.117 6.9l6.218-7c.501-.5.702-1.2.702-2 0-1.8-1.505-3.3-3.31-3.3-1.003 0-2.005.5-2.707 1.3-.301.3-.602.4-.903.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.302 1.6.703 2.1-.1 0-.1 0 0 0Z" fill="#000"/><rect x="24" y="15" width="20" height="20" rx="10" fill="#7DB54F"/><path d="M30.13 26.76h1.4v-4.84l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37v.74h-3.55v-.74Zm7.83-4.67c0 .353-.067.717-.2 1.09a6.56 6.56 0 0 1-.51 1.11c-.207.373-.44.74-.7 1.1-.26.353-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18v.74h-3.98v-.29c.147-.153.323-.343.53-.57a16.081 16.081 0 0 0 1.3-1.63c.22-.313.417-.63.59-.95.18-.32.323-.637.43-.95.107-.313.16-.61.16-.89 0-.327-.093-.597-.28-.81-.187-.22-.47-.33-.85-.33-.253 0-.5.053-.74.16-.24.1-.447.217-.62.35l-.33-.57c.233-.2.51-.357.83-.47.32-.113.663-.17 1.03-.17.287 0 .54.043.76.13.22.08.407.197.56.35.153.153.27.337.35.55.08.207.12.433.12.68Z" fill="#fff"/></svg>
-                <span class="visually-hidden">Избранное</span>
+            <li class="navigation-item-user">
+              <a class="navigation-link-user navigation-link-favorites" href="#">
+                <svg width="33" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44 26c-.3 0-.6-.1-.8-.4-5.41-6.1-6.72-7.5-7.02-7.9A5.4 5.4 0 0 1 6.03 9c1.3 0 2.51.5 3.51 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.3 3.4l-7.02 7.9c-.2.2-.4.3-.8.3Zm-6.01-9.5c.3.4 3.5 4 6.11 6.9l6.22-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2.01.5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.72-1.3c-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/><rect x="13" width="20" height="20" rx="10" fill="#7DB54F"/><path d="M19.13 11.76h1.4V6.92l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37v.74h-3.55v-.74Zm7.83-4.67c0 .35-.07.72-.2 1.09a10.88 10.88 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18v.74h-3.98v-.29a33.15 33.15 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" fill="#fff"/></svg>                <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item navigation-item-button">
+            <li class="navigation-item-user navigation-item-button">
               <a class="navigation-link-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
+      <div class="page-container">
       <main class="main-container main-inner">
         <section class="form-section">
           <h1 class="main-headline-inner">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <img class="breadcrumbs-img" src="#" alt="Домой" />
+                <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/></svg>
               </a>
-            </li>
-            <li class="breadcrumbs-item">
+              <li class="breadcrumbs-item">
+                <svg class="arrow-right-svg" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" clip-path="url(#a)"><path d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8l.4.2.4-.2 3.8-3.4c.3-.2.3-.6 0-.8Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h5v8H0z"/></clipPath></defs></svg>
+           </li>
+                <li class="breadcrumbs-item">
               <a class="breadcrumbs-catalog">Гостиницы</a>
             </li>
           </ul>
@@ -169,8 +164,7 @@
                 >
               </div>
               <div class="hotels-rating-container">
-                <img class="hotels-stars" src="#" alt="Четыре звезды" />
-                <span class="hotels-rating">Рейтинг: 8,5</span>
+                <svg width="91" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0ZM59 0l2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0ZM82 0l2.1 6.5H91l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L82 0Z" fill="#83B3D3"/></svg>                <span class="hotels-rating">Рейтинг: 8,5</span>
               </div>
             </li>
             <li class="hotels-item">
@@ -191,8 +185,7 @@
                 >
               </div>
               <div class="hotels-rating-container">
-                <img class="hotels-stars" src="#" alt="Три звезды" />
-                <span class="hotels-rating">Рейтинг: 8,9</span>
+                <svg width="68" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0ZM59 0l2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0Z" fill="#83B3D3"/></svg>                <span class="hotels-rating">Рейтинг: 8,9</span>
               </div>
             </li>
             <li class="hotels-item">
@@ -213,8 +206,7 @@
                 >
               </div>
               <div class="hotels-rating-container">
-                <img class="hotels-stars" src="#" alt="Две звезды" />
-                <span class="hotels-rating">Рейтинг: 9,2</span>
+                <svg width="43" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Z" fill="#83B3D3"/></svg>                <span class="hotels-rating">Рейтинг: 9,2</span>
               </div>
             </li>
             <li class="hotels-item">
@@ -235,12 +227,13 @@
                 >
               </div>
               <div class="hotels-rating-container">
-                <img class="hotels-stars" src="#" alt="Две звезды" />
-                <span class="hotels-rating">Рейтинг: 9,2</span>
+                <svg width="43" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Z" fill="#83B3D3"/></svg>                <span class="hotels-rating">Рейтинг: 9,2</span>
               </div>
             </li>
           </ul>
+          <div class="button-more-wrapper">
           <button class="button-more" type="button">Загрузить ещё</button>
+          </div>
           <div class="pagination-wrapper">
             <ul class="pagination-list">
               <li class="pagination-item">
@@ -266,7 +259,7 @@
               <label class="hotels-on-page" for="quantity-results"
                 >Гостиниц на странице:</label
               >
-              <select id="quantity-results" class="select-control">
+              <select class="select-control" id="quantity-results">
                 <option value="4">4</option>
               </select>
             </div>
@@ -304,33 +297,30 @@
             <h3 class="visually-hidden">Социальные сети</h3>
             <ul class="social-list">
               <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://twitter.com/htmlacademy_ru"
-                >
-                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6 2.194c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2-.2 6.8-3.3 11.2-10.6 11.1h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1-1.3-.8-2.7-1.6-2.6-3.8.3.3 1.1.5 1.4.5-.8-.2-2.1-3.3-1-4.9 1.9 1.9 4 3.6 7.6 3.8.2-2.4 1.2-3.9 3.1-4.5Z" fill="#83B3D3"/></svg>                </a>
+                <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+                <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2l2.1-.7c0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6a3 3 0 0 1-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9a11 11 0 0 0 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="#83B3D3"/></svg>
+              </a>
+            </li>
+              <li class="social-item">
+                <a class="social-link" href="https://www.facebook.com/htmlacademy">
+                <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3"/></svg>
+                </a>
               </li>
               <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.facebook.com/htmlacademy"
-                >
-                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1C9.8 1 8 2.8 8 5v2H5v4h3v8h4v-8h3V7h-3V5h3V1h-3Z" fill="#83B3D3"/></svg>                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="social-link"
-                  href="https://www.youtube.com/c/HTMLAcademyRUS"
-                >
-                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.81 3.42c.86.23 1.54.9 1.77 1.77C20 6.75 20 10 20 10s0 3.26-.42 4.81a2.5 2.5 0 0 1-1.77 1.77C16.25 17 10 17 10 17s-6.25 0-7.81-.42a2.5 2.5 0 0 1-1.77-1.77C0 13.26 0 10 0 10s0-3.25.42-4.81a2.5 2.5 0 0 1 1.77-1.77C3.75 3 10 3 10 3s6.25 0 7.81.42ZM13.2 10 8 13V7l5.2 3Z" fill="#83B3D3"/></svg>                </a>
-              </li>
-            </ul>
+                <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" fill="#83B3D3"></svg>
+                </a>
+                </li>
+               </ul>
           </section>
           <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-<svg width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 6.2c.8-1 2-1.7 3.6-1.7 2.7 0 4.6 1.9 4.5 4.9v6.1h-2V9.8c0-1.8-1.1-3.2-2.9-3.2-2 0-3.3 1.5-3.3 3.6v5.3h-2V0h2v6.2H8Zm-8 9.3v-2.6h2.5v2.6H0ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm11 1.9c.6-1.3 1.9-2.1 3.5-2.1 2.5 0 4 1.8 3.9 4.3v6.5h-2V9.1c0-1.6-.9-2.6-2.4-2.6-1.2 0-2.6.9-2.6 3.3v5.6h-2V9.1c0-1.6-.9-2.6-2.4-2.6C32 6.5 31 8 31 10v5.4h-2V4.8h1.9v1.6h.1c.6-1 1.7-1.8 3.1-1.8 1.6 0 2.8.9 3.4 2.1h.1Zm10.2 6c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM25 17.9c1.7 0 3 .7 3.9 1.8v-1.5h2v10.6h-2v-1.6h-.1c-.8 1.1-2 1.9-3.8 1.9-3.1 0-5.4-2.3-5.4-5.6s2.3-5.6 5.4-5.6Zm-3.3 5.6c0 2 1.4 3.6 3.6 3.6s3.6-1.7 3.6-3.6c0-2-1.4-3.6-3.6-3.6s-3.6 1.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22Zm7-4.1c1.7 0 3 .7 3.9 1.8v-1.5h2v10.6h-2v-1.6H55c-.8 1.1-2 1.9-3.8 1.9-3.1 0-5.4-2.3-5.4-5.6s2.3-5.6 5.4-5.6Zm-3.3 5.6c0 2 1.4 3.6 3.6 3.6 2.1 0 3.6-1.7 3.6-3.6 0-2-1.4-3.6-3.6-3.6s-3.6 1.6-3.6 3.6Zm20.8-3.7c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm7.7-3.6c0-3.1 2.2-5.6 5.5-5.6 3.5 0 5.7 2.7 5.5 6.3H75c.1 1.6 1.5 2.9 3.4 2.9 1.4 0 2.5-.6 3-1.6h2.1c-.7 2.3-2.7 3.6-5.2 3.6-3.4 0-5.5-2.6-5.5-5.6Zm8.8-1.1c-.3-1.6-1.6-2.6-3.3-2.6-1.7 0-2.9 1.1-3.2 2.6h6.5Zm16.6-4.5c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm7.6.2 3.6 8.9 3.4-8.9h2.1l-4.7 12.2c-.7 1.8-1.7 2.6-3.5 2.6h-2.5v-2h2.5c1 0 1.4-.3 1.7-1.2l-4.8-11.6h2.2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h114.9v32.9H0z"/></clipPath></defs></svg>          </a>
-        </div>
+            <svg width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 6.2c.8-1 2-1.7 3.6-1.7 2.7 0 4.6 1.9 4.5 4.9v6.1h-2V9.8c0-1.8-1.1-3.2-2.9-3.2-2 0-3.3 1.5-3.3 3.6v5.3h-2V0h2v6.2H8Zm-8 9.3v-2.6h2.5v2.6H0ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm11 1.9c.6-1.3 1.9-2.1 3.5-2.1 2.5 0 4 1.8 3.9 4.3v6.5h-2V9.1c0-1.6-.9-2.6-2.4-2.6-1.2 0-2.6.9-2.6 3.3v5.6h-2V9.1c0-1.6-.9-2.6-2.4-2.6C32 6.5 31 8 31 10v5.4h-2V4.8h1.9v1.6h.1c.6-1 1.7-1.8 3.1-1.8 1.6 0 2.8.9 3.4 2.1h.1Zm10.2 6c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM25 17.9c1.7 0 3 .7 3.9 1.8v-1.5h2v10.6h-2v-1.6h-.1c-.8 1.1-2 1.9-3.8 1.9-3.1 0-5.4-2.3-5.4-5.6s2.3-5.6 5.4-5.6Zm-3.3 5.6c0 2 1.4 3.6 3.6 3.6s3.6-1.7 3.6-3.6c0-2-1.4-3.6-3.6-3.6s-3.6 1.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22Zm7-4.1c1.7 0 3 .7 3.9 1.8v-1.5h2v10.6h-2v-1.6H55c-.8 1.1-2 1.9-3.8 1.9-3.1 0-5.4-2.3-5.4-5.6s2.3-5.6 5.4-5.6Zm-3.3 5.6c0 2 1.4 3.6 3.6 3.6 2.1 0 3.6-1.7 3.6-3.6 0-2-1.4-3.6-3.6-3.6s-3.6 1.6-3.6 3.6Zm20.8-3.7c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm7.7-3.6c0-3.1 2.2-5.6 5.5-5.6 3.5 0 5.7 2.7 5.5 6.3H75c.1 1.6 1.5 2.9 3.4 2.9 1.4 0 2.5-.6 3-1.6h2.1c-.7 2.3-2.7 3.6-5.2 3.6-3.4 0-5.5-2.6-5.5-5.6Zm8.8-1.1c-.3-1.6-1.6-2.6-3.3-2.6-1.7 0-2.9 1.1-3.2 2.6h6.5Zm16.6-4.5c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm7.6.2 3.6 8.9 3.4-8.9h2.1l-4.7 12.2c-.7 1.8-1.7 2.6-3.5 2.6h-2.5v-2h2.5c1 0 1.4-.3 1.7-1.2l-4.8-11.6h2.2Z" fill="#000">
+            </svg>
+                      </a>
+            </div>
       </footer>
+      </div>
     </div>
   </body>
 </html>
