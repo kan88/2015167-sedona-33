@@ -129,6 +129,7 @@ body {
   box-sizing: border-box;
   font-weight: 700;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navigation-item-button {
@@ -299,6 +300,7 @@ body {
   display: inline-block;
   padding-top: 12px;
   padding-bottom: 12px;
+  cursor: pointer;
 }
 
 .subscribe {
@@ -354,6 +356,7 @@ body {
   width: 200px;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer-container {
@@ -518,6 +521,7 @@ body {
   padding-bottom: 13px;
   border-radius: 4px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .form-reset {
@@ -531,6 +535,7 @@ body {
   color: white;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .form-result {
@@ -639,6 +644,7 @@ body {
   font-family: inherit;
   padding-top: 9px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .hotels-button-info {
@@ -697,6 +703,7 @@ body {
   padding-bottom: 17px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .pagination-wrapper {
@@ -733,6 +740,7 @@ body {
   padding: 15px 15px;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .pagination-actual {
