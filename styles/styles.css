@@ -540,10 +540,10 @@ body {
   display: block;
   height: 34px;
   width: 34px;
+  border-radius: 3px;
 }
 
 .social-link:focus-visible {
-  border-radius: 3px;
   outline: 3px solid #68a2ca;
 }
 
@@ -607,6 +607,7 @@ body {
   width: 154px;
   height: 64px;
   margin-top: 25px;
+  border-radius: 3px;
 }
 
 .htmlacademy-icon {
@@ -624,7 +625,6 @@ body {
 }
 
 .htmlacademy-link:focus-visible {
-  border-radius: 3px;
   outline: 3px solid #68a2ca;
 }
 
