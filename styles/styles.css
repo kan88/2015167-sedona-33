@@ -149,7 +149,7 @@ body {
   background-color: #7db54f;
   border-radius: 10px;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 20px;
   font-weight: 400;
   color: white;
   width: 20px;
@@ -460,13 +460,11 @@ body {
   outline: none;
 }
 
-/* класс ниже отвечает за вывод стиля при ошибки */
-
-/* .newsletter-field-error {
+.newsletter-field-error {
   background: #fff;
   outline: 2px solid #ff5757;
   z-index: 1;
-} */
+}
 
 .newsletter-field:hover {
   background: #e5e5e5;
