@@ -657,10 +657,6 @@ body {
   text-align: start;
 }
 
-.breadcrumbs-wrapper {
-  padding-left: 68px;
-}
-
 .breadcrumbs-list {
   display: flex;
   padding: 0;
@@ -668,6 +664,7 @@ body {
   margin-bottom: 45px;
   list-style-type: none;
   position: relative;
+  padding-left: 68px;
 }
 
 .breadcrumbs-link {
@@ -701,7 +698,7 @@ body {
 .breadcrumbs-item::before {
   position: absolute;
   top: 7px;
-  left: 30px;
+  left: 97px;
   content: "";
   width: 6px;
   height: 8px;
@@ -856,8 +853,6 @@ padding-right: 5px;
   margin-right: 192px;
   text-transform: uppercase;
   padding-top: 6px;
-  margin-left: 0;
-  padding-left: 0;
   text-align: start;
 }
 
@@ -950,9 +945,8 @@ padding-right: 5px;
 
 .hotels-link {
   text-decoration: none;
-  display: block;
+  display: flex;
   width: 300px;
-  height: 206px;
   margin-bottom: 16px;
 }
 
@@ -1096,7 +1090,18 @@ padding-right: 5px;
   padding-bottom: 7px;
 }
 
-.two-stars {
+.stars-1 {
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+  width: 22px;
+  height: 17px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+
+.stars-2 {
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   width: 44px;
@@ -1106,7 +1111,7 @@ padding-right: 5px;
   left: 0;
 }
 
-.three-stars {
+.stars-3 {
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   width: 70px;
@@ -1116,10 +1121,20 @@ padding-right: 5px;
   left: 0;
 }
 
-.four-stars {
+.stars-4 {
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   width: 92px;
+  height: 17px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.stars-5 {
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+  width: 110px;
   height: 17px;
   position: absolute;
   top: 9px;
