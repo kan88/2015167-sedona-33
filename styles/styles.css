@@ -766,6 +766,155 @@ padding-right: 5px;
   color: white;
 }
 
+.inputs-label {
+  position: relative;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.inputs-label-min::before {
+  position: absolute;
+  content: "от";
+  color: rgba(255, 255, 255, 0.3);
+  top: 12px;
+  right: 14px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.inputs-label-max::before {
+  position: absolute;
+  content: "до";
+  color: rgba(255, 255, 255, 0.3);
+  top: 12px;
+  right: 14px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.range-input-min {
+  line-height: 42px;
+  font-weight: 400;
+  font-size: 18px;
+  background: none;
+  border: 2px solid #fff;
+  color: white;
+  padding-left: 16px;
+  width: 122px;
+  margin-bottom: 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-max {
+  line-height: 42px;
+  font-weight: 400;
+  font-size: 18px;
+  background: none;
+  border: 2px solid #fff;
+  border-left: none;
+  color: white;
+  padding-left: 16px;
+  width: 122px;
+  margin-bottom: 20px;
+  border-radius: 4px 0 0 4px;
+  }
+
+.range-input-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.range-input-max:hover {
+  border-left: none;
+}
+
+.range-input-min:focus {
+  box-shadow: inset 0px 0px 0px 2px #81b3d2;
+  border: 2px solid #fff;
+  outline: 2px solid #81b3d2;
+  z-index: 1;
+  position: relative;
+}
+
+.range-input-max:focus {
+  box-shadow: inset 0px 0px 0px 2px #81b3d2;
+  border: 2px solid #fff;
+  outline: 2px solid #81b3d2;
+  padding-left: 14px;
+}
+
+.range-input-min:active {
+  background-color: #756257;
+  box-shadow: none;
+  outline: none;
+}
+
+.range-input-max:active {
+  background-color: #756257;
+  box-shadow: none;
+  outline: none;
+  border-left: none;
+  padding-left: 16px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background: rgba(255, 255, 255, 1);
+  margin-left: 8px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
 .button-wrapper {
   display: flex;
   flex-direction: column;
