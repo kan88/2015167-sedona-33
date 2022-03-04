@@ -725,13 +725,8 @@ padding-right: 5px;
   margin: 0;
 }
 
-.form-legend {
-  margin-bottom: 30px;
-  text-align: start;
-}
-
 .form-item {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .form-fieldset {
@@ -746,9 +741,9 @@ padding-right: 5px;
 }
 
 .radio-wrapper {
-  margin: 0;
   padding: 0;
   display: flex;
+  margin-right: 152px;
 }
 
 .form-legend {
@@ -758,12 +753,79 @@ padding-right: 5px;
   font-weight: 700;
   color: white;
   padding: 0;
+  margin-bottom: 29px;
+  text-align: start;
 }
 
 .form-label {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.span-title {
   font-size: 18px;
   line-height: 23px;
   color: white;
+}
+
+.checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.form-label:hover .checkbox-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form-label:focus .checkbox-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.form-label:active .checkbox-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .checkbox-mark::before {
+  background-image: url(../images/icons/check-checkbox.svg);
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  content: "";
+}
+
+.radio-mark {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.control-input[type="radio"]:checked + .radio-mark::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: #3F5E72;
+  z-index: 1;
 }
 
 .inputs-label {
@@ -800,36 +862,27 @@ padding-right: 5px;
   font-weight: 400;
 }
 
+.range-input {
+  line-height: 42px;
+  font-weight: 400;
+  font-size: 18px;
+  background: none;
+  border: 2px solid #fff;
+  color: white;
+  padding-left: 16px;
+  padding-right: 35px;
+  width: 90px;
+  margin-bottom: 26px;
+}
+
 .range-input-min {
-  line-height: 42px;
-  font-weight: 400;
-  font-size: 18px;
-  background: none;
-  border: 2px solid #fff;
-  color: white;
-  padding-left: 16px;
-  width: 122px;
-  margin-bottom: 20px;
   border-radius: 4px 0 0 4px;
 }
 
 .range-input-max {
-  line-height: 42px;
-  font-weight: 400;
-  font-size: 18px;
-  background: none;
-  border: 2px solid #fff;
   border-left: none;
-  color: white;
-  padding-left: 16px;
-  width: 122px;
-  margin-bottom: 20px;
-  border-radius: 4px 0 0 4px;
-  }
-
-.range-input-max {
   border-radius: 0 4px 4px 0;
-}
+  }
 
 .range-input:hover {
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -868,6 +921,11 @@ padding-right: 5px;
   padding-left: 16px;
 }
 
+.range-input:disabled,
+.range-input:disabled:hover {
+  border-color: red;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -878,7 +936,7 @@ padding-right: 5px;
   position: absolute;
   height: 4px;
   background: rgba(255, 255, 255, 1);
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .range-toggle {
@@ -936,7 +994,7 @@ padding-right: 5px;
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   cursor: pointer;
 }
 
@@ -969,7 +1027,7 @@ padding-right: 5px;
   cursor: pointer;
   border-radius: 4px;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 13px;
   display: block;
 }
 
@@ -990,7 +1048,8 @@ padding-right: 5px;
   display: flex;
   width: 1057px;
   padding-top: 44px;
-  margin: 0 auto 50px;
+  margin: 0 auto 52px;
+  position: relative;
 }
 
 .results-text {
@@ -1016,11 +1075,14 @@ padding-right: 5px;
   width: 287px;
   font-family: inherit;
   margin: 0;
-  padding: 10px 0 12px 12px;
+  padding: 10px 0 12px 17px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   color: #333;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../images/icons/arrow-select.svg") center right 19px no-repeat;
 }
 
 .select-control-results:hover {
@@ -1401,9 +1463,13 @@ padding-right: 5px;
   font-size: 18px;
   line-height: 23px;
   width: 160px;
-  padding: 11px 0 11px 12px;
+  padding: 11px 0 11px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../images/icons/arrow-select.svg") center right 19px no-repeat;
 }
 
 .select-control:hover {
