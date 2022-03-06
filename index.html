@@ -210,5 +210,58 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group-date">
+                <label class="search-label" for="search-date-in">Дата заезда:</label>
+                <input class="search-input" type="text" placeholder="Укажите дату" id="search-date-in">
+                <span class="error-notification">Мы не можем отправить вас в прошлое.</span>
+              </p>
+              <p class="field-group-date">
+                <label class="search-label" for="search-date-out">Дата выезда:</label>
+                <input class="search-input" type="text" placeholder="Укажите дату" id="search-date-out">
+                <span class="positive-notification">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+              <div class="field-group-age">
+                <label class="adult-label" for="adult">Взрослые:</label>
+                <p class="buttons-wrapper">
+                  <button class="button-value button-minus" type="button">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9v2h14V9H3Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <span class="adult-results">2</span>
+                  <button class="button-value button-plus" type="button">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#000"/>
+                    </svg>
+                  </button>
+                </p>
+                <label class="child-label" for="child">Дети:</label>
+                <p class="buttons-wrapper">
+                  <button class="button-value button-minus" type="button">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9v2h14V9H3Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <span class="child-results">1</span>
+                  <button class="button-value button-plus" type="button">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#000"/>
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <button class="search-form-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
   </body>
 </html>
