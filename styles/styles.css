@@ -735,6 +735,7 @@ body {
 
 .field-group-age {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   justify-content: space-around;
 }
@@ -772,9 +773,10 @@ body {
 .child-label {
   line-height: 40px;
   font-weight: 700;
-  padding: 5px 43px 0 56px;
   width: 54px;
-  text-align: start;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 78px;
 }
 
 .search-form-button {
@@ -791,6 +793,53 @@ body {
   border: none;
   margin: 0 auto;
 
+}
+
+.tooltip-toggle {
+  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  padding: 15px 18px 18px 22px;
+  width: 256px;
+  display: block;
+  background-color: #333333;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: -100px;
+  top: 45px;
+}
+
+.tooltip-text::before {
+  content: "";
+  background-image: url(../images/icons/vector.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -9px;
+  left: 150px;
+  width: 19px;
+  height: 9px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 7px;
+  left: 80px;
 }
 
 /* catalog.html  */
