@@ -648,9 +648,9 @@ body {
   z-index: 1;
 }
 
-/* .modal-container-none {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -659,7 +659,6 @@ body {
   padding: 62px 70px 70px 68px;
   border-radius: 30px;
   width: 575px;
-  height: 561px;
 }
 
 .modal-close-button {
@@ -748,11 +747,12 @@ body {
   background-color: #fff;
 }
 
-.date-icon {
+.date-button {
   position: absolute;
   opacity: 30%;
-  right: 16px;
-  top: 15px;
+  right: 10px;
+  top: 14px;
+  border: none;
 }
 
 .error-notification {
@@ -799,8 +799,13 @@ body {
 
 .adult-results {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 40px;
+  border: none;
+  width: 30px;
+  background-color: #F2F2F2;
+  text-align: center;
+  font-family: "PT Sans";
 }
 
 .button-value {
@@ -832,13 +837,27 @@ body {
   outline: none;
 }
 
+.child-label-wrapper {
+  position: relative;
+}
+
 .child-label {
   line-height: 50px;
   font-weight: 700;
   width: 54px;
-  position: relative;
-  padding-left: 28px;
-  padding-right: 71px;
+  padding-left: 56px;
+  padding-right: 54px;
+}
+
+.child-results {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  border: none;
+  width: 30px;
+  background-color: #F2F2F2;
+  text-align: center;
+  font-family: "PT Sans";
 }
 
 .tooltip-toggle {
@@ -864,8 +883,8 @@ body {
   line-height: 20px;
   font-weight: 400;
   position: absolute;
-  right: -116px;
-  top: 53px;
+  right: -115px;
+  top: 41px;
   text-align: start;
   box-shadow: 0px 15px 30px 0px #0000004D;
 }
@@ -883,7 +902,7 @@ body {
 
 .tooltip {
   position: absolute;
-  bottom: 65px;
+  top: 14px;
   right: 17px;
   width: 25px;
   height: 25px;
@@ -1174,7 +1193,7 @@ padding-right: 5px;
   border-radius: 0 4px 4px 0;
   }
 
-.range-input:hover {
+.range-input:not(disabled):hover {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1211,10 +1230,6 @@ padding-right: 5px;
   padding-left: 16px;
 }
 
-.range-input:disabled,
-.range-input:disabled:hover {
-  border-color: red;
-}
 
 .range-scale {
   position: relative;

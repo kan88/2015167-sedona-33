@@ -210,7 +210,7 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container modal-container-none">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -221,42 +221,46 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group-date">
+              <div class="field-group-date">
                 <label class="search-label" for="search-date-in">Дата заезда:</label>
                 <input class="search-input" type="text" placeholder="Укажите дату" id="search-date-in">
-                <svg class="date-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/>
-                  <path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" fill="#000"/>
-                  <path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/>
-                </svg>
+                <button class="date-button" type="button">
+                  <svg class="date-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/>
+                    <path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" fill="#000"/>
+                    <path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/>
+                  </svg>
+                </button>
                 <span class="error-notification">Мы не можем отправить вас в прошлое.</span>
-              </p>
-              <p class="field-group-date">
+              </div>
+              <div class="field-group-date">
                 <label class="search-label" for="search-date-out">Дата выезда:</label>
                 <input class="search-input" type="text" placeholder="Укажите дату" id="search-date-out">
-                <svg class="date-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/>
-                  <path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" fill="#000"/>
-                  <path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/>
-                </svg>
+                <button class="date-button" type="button">
+                  <svg class="date-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/>
+                    <path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" fill="#000"/>
+                    <path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/>
+                  </svg>
+                </button>
                 <span class="positive-notification">На эти даты есть свободные номера. Пока есть.</span>
-              </p>
+              </div>
               <div class="field-group-age">
                 <label class="adult-label" for="adult">Взрослые:</label>
-                <p class="buttons-wrapper">
+                <div class="buttons-wrapper">
                   <button class="button-value" type="button">
                     <svg class="button-icon button-icon-minus" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9v2h14V9H3Z" fill="#000"/>
                     </svg>
                   </button>
-                  <span class="adult-results">2</span>
+                  <input class="adult-results" type="text" value="2"></input>
                   <button class="button-value" type="button">
                     <svg class="button-icon button-icon-plus" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#000"/>
                     </svg>
                   </button>
-                </p>
-                <span class="child-label">
+                </div>
+                <span class="child-label-wrapper">
                   <label class="child-label" for="child">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
@@ -272,22 +276,22 @@
                         </defs>
                       </svg>
                     </button>
-                  <span class="tooltip-text" id="tooltip-label" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    <span class="tooltip-text" id="tooltip-label" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <p class="buttons-wrapper">
+                <div class="buttons-wrapper">
                   <button class="button-value" type="button">
                     <svg class="button-icon button-icon-minus" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9v2h14V9H3Z" fill="#000"/>
                     </svg>
                   </button>
-                  <span class="child-results">1</span>
+                  <input class="child-results" type="text" value="1"></input>
                   <button class="button-value" type="button">
                     <svg class="button-icon button-icon-plus" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#000"/>
                     </svg>
                   </button>
-                </p>
+                </div>
               </div>
               <button class="search-form-button" type="submit">Найти</button>
             </form>
