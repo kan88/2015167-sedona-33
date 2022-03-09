@@ -797,7 +797,7 @@ body {
   margin: 0;
 }
 
-.adult-results {
+.value-results {
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
@@ -847,17 +847,6 @@ body {
   width: 54px;
   padding-left: 56px;
   padding-right: 54px;
-}
-
-.child-results {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
-  border: none;
-  width: 30px;
-  background-color: #F2F2F2;
-  text-align: center;
-  font-family: "PT Sans";
 }
 
 .tooltip-toggle {
@@ -1193,7 +1182,7 @@ padding-right: 5px;
   border-radius: 0 4px 4px 0;
   }
 
-.range-input:not(disabled):hover {
+.range-input:not(:disabled):hover {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
