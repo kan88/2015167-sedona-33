@@ -271,7 +271,7 @@ body {
   color: #ffffff;
   margin: 0 auto 30px;
   text-transform: uppercase;
-  width: 170px;
+  width: 172px;
   padding-top: 98px;
 }
 
@@ -380,7 +380,7 @@ body {
 .search-text {
   font-size: 22px;
   line-height: 26px;
-  width: 780px;
+  width: 785px;
   margin: 0 auto 56px;
 }
 
@@ -948,9 +948,9 @@ body {
   line-height: 60px;
   color: #ffffff;
   width: 528px;
-  padding-top: 47px;
+  padding-top: 43px;
   padding-left: 71px;
-  margin-bottom: 0;
+  margin-bottom: 2px;
   margin-top: 0;
   text-align: start;
 }
@@ -960,7 +960,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   list-style-type: none;
   position: relative;
   padding-left: 68px;
@@ -1015,7 +1015,7 @@ body {
 }
 
 .form-item {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .form-fieldset {
@@ -1160,7 +1160,7 @@ body {
   padding-left: 16px;
   padding-right: 35px;
   width: 90px;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .range-input-min {
