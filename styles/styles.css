@@ -782,6 +782,7 @@ body {
   margin-bottom: 40px;
   width: 155px;
   text-align: start;
+  cursor: pointer;
 }
 
 .buttons-wrapper {
@@ -845,6 +846,7 @@ body {
   width: 54px;
   padding-left: 56px;
   padding-right: 54px;
+  cursor: pointer;
 }
 
 .tooltip-toggle {
@@ -1177,7 +1179,7 @@ body {
 }
 
 .range-input-max:hover {
-  border-left: none;
+  padding-left: 14px;
 }
 
 .range-input-min:focus {
