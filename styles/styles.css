@@ -1181,12 +1181,13 @@ img {
   border-radius: 0 4px 4px 0;
 }
 
-.range-input:not(:disabled):hover {
+.range-input-min:not(:disabled):hover {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.range-input-max:hover {
-  padding-left: 14px;
+.range-input-max:not(:disabled):hover {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
 }
 
 .range-input-min:focus {
@@ -1201,7 +1202,6 @@ img {
   box-shadow: inset 0 0 0 2px #81b3d2;
   border: 2px solid #ffffff;
   outline: 2px solid #81b3d2;
-  padding-left: 14px;
 }
 
 .range-input-min:active {
@@ -1220,6 +1220,7 @@ img {
 
 
 .range-scale {
+  width: 288px;
   position: relative;
   height: 4px;
   background: rgba(255, 255, 255, 0.3);
@@ -1383,9 +1384,8 @@ img {
 }
 
 .select-control-results:focus {
-  outline: 2px solid #83b3d3;
-  border: none;
-  margin-bottom: 4px;
+  outline: none;
+  border: 2px solid #83b3d3;
 }
 
 .select-control-results:active {
