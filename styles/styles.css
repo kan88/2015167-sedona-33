@@ -55,7 +55,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0px #00000033;
 }
 
 .navigation {
@@ -660,10 +660,11 @@ img {
 .modal {
   position: relative;
   margin: auto;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   padding: 62px 70px 70px 68px;
   border-radius: 30px;
   width: 575px;
+  box-shadow: 0px 25px 50px 0px #00000026;
 }
 
 .modal-close-button {
@@ -796,7 +797,7 @@ img {
   height: 50px;
   width: 133px;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-evenly;
   background-color: #f2f2f2;
   border-radius: 4px;
   margin: 0;
@@ -821,24 +822,35 @@ img {
   padding: 0;
   border-radius: 4px;
   outline: none;
+  position: relative;
+  background-color: transparent;
 }
 
 .button-icon {
-  opacity: 40%;
   border-radius: 4px;
+  fill: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .button-value:hover .button-icon {
-  opacity: 100%;
+  fill: rgba(0, 0, 0, 1);
 }
 
-.button-value:focus .button-icon {
-  opacity: 100%;
+.button-value:focus {
   outline: 3px solid #83b3d3;
 }
 
+.button-value:focus .button-icon {
+  fill: rgba(0, 0, 0, 1);
+}
+
 .button-value:active .button-icon {
-  opacity: 20%;
+  fill: rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
@@ -920,8 +932,8 @@ img {
   text-transform: uppercase;
   border-radius: 10px;
   border: none;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
 }
 
@@ -979,8 +991,9 @@ img {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 22px;
+  margin-right: 17px;
   padding-left: 5px;
+  padding-right: 5px;
   border-radius: 4px;
   display: block;
 }
@@ -1081,9 +1094,9 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.form-label:focus .checkbox-mark {
+.control-input[type="checkbox"]:focus ~ .checkbox-mark {
   background-color: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .form-label:active .checkbox-mark {
@@ -1124,15 +1137,17 @@ img {
   background-color: #3f5e72;
 }
 
-.inputs-label {
-  position: relative;
+.control-input[type="radio"]:checked:focus ~ .radio-mark {
+  outline: 3px solid #83b3d3;
+  box-shadow: none;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
-  margin: 0;
+.control-input[type="radio"]:focus ~ .radio-mark {
+  box-shadow: inset 0 0 0 3px #81b3d2;
+}
+
+.inputs-label {
+  position: relative;
 }
 
 .range-wrapper-inputs {
@@ -1245,6 +1260,7 @@ img {
 
 .range-toggle:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px 0px #00000040;
 }
 
 .range-toggle:focus {
@@ -1732,7 +1748,6 @@ img {
 }
 
 .pagination-link:focus {
-  background: #68a2ca;
   outline: 3px solid #756257;
 }
 
