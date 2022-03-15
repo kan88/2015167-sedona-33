@@ -1441,8 +1441,8 @@ img {
 }
 
 .button:focus {
-  outline: 2px solid #83b3d3;
-  border: none;
+  outline: none;
+  border: 2px solid #83b3d3;
 }
 
 .button-actual {
