@@ -44,6 +44,7 @@ body {
   color: #000000;
   text-align: center;
   background-color: #f2f2f2;
+  width: 1280px;
 }
 
 img {
@@ -217,6 +218,7 @@ img {
   background-repeat: no-repeat;
   padding-bottom: 77px;
   position: relative;
+  background-color: #000000;
 }
 
 .main-img-wrapper::after {
